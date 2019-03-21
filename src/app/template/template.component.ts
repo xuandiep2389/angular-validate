@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-template',
   templateUrl: './template.component.html',
   styleUrls: ['./template.component.css']
 })
-export class TemplateComponent implements OnInit {
+export class TemplateComponent {
 
-  constructor() { }
+  powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
 
-  ngOnInit() {
-  }
-
+  hero = {name: 'Dr.', alterEgo: 'Dr. What', power: this.powers[0]};
 }
